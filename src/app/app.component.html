@@ -1,3 +1,16 @@
 <app-header></app-header>
-<app-home></app-home>
+<div class="container">
+  <div class="container">
+    <div id="alertMsg">
+      <p>
+        {{message}}
+      </p>
+    </div>
+    <div id="home">
+    <app-article [titreArticle]=" 'Vélo' "   [prixArticle]="prix1" (info)="onAffiche($event)"></app-article>
+    <app-article [titreArticle]=" 'TV' "     [prixArticle]="prix2" (info)="onAffiche($event)"></app-article>
+    <app-article [titreArticle]=" 'Jouet ' " [prixArticle]="prix3" (info)="onAffiche($event)"></app-article>
+    </div>
+  </div>
+</div>
 <app-footer></app-footer>
